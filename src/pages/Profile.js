@@ -1,10 +1,17 @@
 import React from 'react'
+import {IonContent, IonPage} from '@ionic/react'
+import LargeHeader from '../components/Header/LargeHeader';
+import SmallHeader from '../components/Header/SmallHeader';
+
 
 const Profile = () => {
     return (
-        <div>
-            
-        </div>
+       <IonPage>
+         <SmallHeader title='Profile'/>
+         <IonContent fullscreen>
+            <LargeHeader title='Profile'/>
+         </IonContent>
+       </IonPage>
     )
 }
 
